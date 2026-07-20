@@ -1,3 +1,25 @@
+//Clickable Hero image change 
+const hero = document.getElementById("heroImage");
+
+const heroImages = [
+    "images/noco-hero1.jpg",
+    "images/noco-hero2.jpg",
+    "images/noco-hero3.jpg",
+    "images/noco-hero4.jpg"
+];
+
+let currentImage = 0;
+
+function nextImage(){
+    currentImage = (currentImage + 1) % heroImages.length;
+    hero.src = heroImages[currentImage];
+}
+
+hero.onclick = nextImage;
+
+// Automatically change every 3 seconds
+setInterval(nextImage, 3000);
+
 // Intersection Observer for fade-in animations
 const fadeElements = document.querySelectorAll(".fade-in");
 
