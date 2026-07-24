@@ -35,6 +35,17 @@ header {
   padding-top: 30rem;
 }
 
+.colocomp-logo img {
+    height: 70px;
+    width: auto;
+}
+
+.colocomp-logo {
+  
+    justify-self: end;
+
+}
+
 /* =========================
    HERO SECTION LAYOUT
 ========================= */
@@ -685,6 +696,24 @@ textarea {
   grid-column: span 2;
   padding: 1rem;
   font-size: 1.1rem;
+}
+
+.partner-banner {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.email-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.email-info a:hover {
+    color: #d4af37; /* Your gold accent */
+    text-decoration: underline;
 }
 
 /* Footer */
