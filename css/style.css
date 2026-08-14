@@ -718,7 +718,7 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
 @media (max-width: 768px) {
 
   /* HEADER */
-  /* HEADER */
+  /* HEADER - MOBILE */
 
   header {
     grid-template-columns: 1fr auto;
@@ -728,10 +728,11 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
     text-align: center;
   }
 
+  /* NoCo Div10 logo - top left */
   .logo {
-    justify-self: start;
     grid-column: 1;
     grid-row: 1;
+    justify-self: start;
   }
 
   .logo img {
@@ -739,10 +740,11 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
     width: auto;
   }
 
+  /* Colorado Company logo - top right */
   .colocomp-logo {
-    justify-self: end;
     grid-column: 2;
     grid-row: 1;
+    justify-self: end;
   }
 
   .colocomp-logo img {
@@ -750,6 +752,7 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
     width: auto;
   }
 
+  /* Navigation - second row */
   nav {
     grid-column: 1 / -1;
     grid-row: 2;
@@ -761,8 +764,8 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  }
-  /* HERO */
+
+  }  /* HERO */
 
   .hero {
     flex-direction: column;
@@ -908,6 +911,14 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
 ========================================= */
 
 @media (max-width: 480px) {
+
+  .logo img {
+    height: 60px;
+  }
+
+  .colocomp-logo img {
+    height: 45px;
+  }
 
   .hero-content h1 {
     font-size: 2rem;
