@@ -718,23 +718,41 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
 @media (max-width: 768px) {
 
   /* HEADER */
+  /* HEADER */
 
   header {
-    grid-template-columns: 1fr;
-    padding: 1rem 5%;
-    gap: 1rem;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    padding: 0.8rem 5%;
+    gap: 0.5rem;
     text-align: center;
   }
 
   .logo {
-    justify-self: center;
+    justify-self: start;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .logo img {
-    height: 75px;
+    height: 65px;
+    width: auto;
+  }
+
+  .colocomp-logo {
+    justify-self: end;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .colocomp-logo img {
+    height: 50px;
+    width: auto;
   }
 
   nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
     width: 100%;
   }
 
@@ -744,8 +762,6 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
     align-items: center;
     gap: 1rem;
   }
-
-
   /* HERO */
 
   .hero {
