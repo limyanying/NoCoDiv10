@@ -721,11 +721,15 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
   /* HEADER - MOBILE */
 
   header {
+    position: relative;
+  top: auto;
+  width: 100%;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
     padding: 0.8rem 5%;
     gap: 0.5rem;
     text-align: center;
+    z-index: 1000;
   }
 
   /* NoCo Div10 logo - top left */
@@ -768,6 +772,7 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
   }  /* HERO */
 
   .hero {
+    margin-top: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -896,7 +901,7 @@ background: linear-gradient(145deg, #ffffff, #f8f8f8);
   /* CONTACT PAGE */
 
   .contactus-padding {
-    padding-top: 140px;
+    padding-top: 40px;
   }
 
   .contactus-form {
